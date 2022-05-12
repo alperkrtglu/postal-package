@@ -16,14 +16,12 @@ public class Shipment {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "SENDER_ID")
     private Sender sender;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "POSTMAN_ID")
     private Postman postman;
 
-    @OneToOne(mappedBy = "shipment", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false)
+    @OneToOne(mappedBy = "shipment", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Address address;
 
     @ManyToMany(cascade = CascadeType.ALL)

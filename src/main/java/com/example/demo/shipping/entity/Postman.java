@@ -21,7 +21,11 @@ public class Postman {
     @Column(name = "SURNAME")
     private String surname;
 
-    @OneToMany(mappedBy = "sender", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "postman", cascade = CascadeType.ALL)
     private List<Shipment> shipmentList;
+
+    public String fullName() {
+        return name + " " + surname;
+    }
 
 }

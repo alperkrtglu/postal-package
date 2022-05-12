@@ -10,3 +10,5 @@ spring:
       ddl-auto: none
   h2:
     console.enabled: true
+  thymeleaf:
+    cache: false

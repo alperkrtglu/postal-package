@@ -27,4 +27,8 @@ public class Sender {
     @OneToMany(mappedBy = "sender", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Shipment> shipmentList;
 
+    public String fullName() {
+        return name + " " + surname;
+    }
+
 }

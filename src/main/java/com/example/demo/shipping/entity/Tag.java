@@ -1,5 +1,6 @@
 package com.example.demo.shipping.entity;
 
+import com.example.demo.shipping.enums.TagName;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -14,7 +15,12 @@ public class Tag {
     @Column(name = "ID")
     private Long id;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "NAME")
-    private String name;
+    private TagName name;
 
+    @Override
+    public String toString() {
+        return name.name();
+    }
 }
