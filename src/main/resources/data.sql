@@ -21,3 +21,9 @@ VALUES (10000, 10000, 10000);
 
 INSERT INTO SHIPMENT_TAG (id, shipment_id, tag_id)
 VALUES (10001, 10000, 10001);
+
+INSERT INTO USER (id, username, password, role, user_id)
+VALUES (10000, 'postman', '123', 'POSTMAN', 10000);
+
+INSERT INTO USER (id, username, password, role, user_id)
+VALUES (10001, 'sender', '123', 'SENDER', 10000);
