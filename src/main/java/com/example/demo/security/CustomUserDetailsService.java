@@ -1,4 +1,4 @@
-package com.example.demo.shipping.security;
+package com.example.demo.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

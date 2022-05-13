@@ -1,20 +1,26 @@
 INSERT INTO SENDER (id, name, surname, email)
-VALUES (10000, 'Ali', 'Kurt', 'ali@gmail.com');
+VALUES (10000, 'Olivier', 'Peters', 'olivierpeters@gmail.com');
 
 INSERT INTO POSTMAN (id, name, surname)
-VALUES (10000, 'Murat', 'Aydos');
+VALUES (10000, 'Kade', 'Richardson');
 
 INSERT INTO SHIPMENT (id, sender_id, postman_id)
 VALUES (10000, 10000, 10000);
 
 INSERT INTO ADDRESS (id, city, address, shipment_id)
-VALUES (10000, 'ANKARA', 'Basinevleri', 10000);
+VALUES (10000, 'LONDON', '81 Manchester Road London SW74 2UE', 10000);
 
 INSERT INTO TAG (id, name)
 VALUES (10000, 'FRAGILE');
 
 INSERT INTO TAG (id, name)
 VALUES (10001, 'ELECTRONIC');
+
+INSERT INTO TAG (id, name)
+VALUES (10002, 'GAMES');
+
+INSERT INTO TAG (id, name)
+VALUES (10003, 'FOOD');
 
 INSERT INTO SHIPMENT_TAG (id, shipment_id, tag_id)
 VALUES (10000, 10000, 10000);

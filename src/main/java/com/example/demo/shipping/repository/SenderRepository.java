@@ -1,6 +1,5 @@
 package com.example.demo.shipping.repository;
 
-import com.example.demo.shipping.entity.Postman;
 import com.example.demo.shipping.entity.Sender;
 import org.springframework.data.jpa.repository.JpaRepository;
 

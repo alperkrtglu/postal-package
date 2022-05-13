@@ -21,10 +21,10 @@ public class Shipment {
     @ManyToOne(fetch = FetchType.LAZY)
     private Postman postman;
 
-    @OneToOne(mappedBy = "shipment", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "shipment", cascade = {CascadeType.MERGE, CascadeType.PERSIST}, fetch = FetchType.LAZY)
     private Address address;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.MERGE)
     @JoinTable(name = "SHIPMENT_TAG",
             joinColumns = @JoinColumn(name = "SHIPMENT_ID", referencedColumnName = "ID"),
             inverseJoinColumns = @JoinColumn(name = "TAG_ID", referencedColumnName = "ID"))

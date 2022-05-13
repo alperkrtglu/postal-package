@@ -1,7 +1,6 @@
-package com.example.demo.shipping.security;
+package com.example.demo.security;
 
 import lombok.RequiredArgsConstructor;
-import lombok.extern.apachecommons.CommonsLog;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -9,5 +9,5 @@ public class ShipmentDTO {
 
     private String city;
     private String address;
-    private List<String> tags;
+    private List<Long> tags;
 }
